@@ -1,0 +1,11 @@
+﻿
+@{
+    var welcomeMessage = TempData["welcomeMessage"] as string;
+    var SubsCount = TempData["subsCount"];
+    var ButtonName = TempData["buttonName"] as string;
+    var buttonColor = TempData["buttonColor"] as string;
+}
+<h1>TempData</h1>
+<div style="color: white; background-color: #302e2e">@welcomeMessage</div>
+<div style="margin-top: 15px;color:white;background-color: #302e2e;">Abone sayımız şuan @SubsCount</div>
+<button style="align-items:center;margin-top: 15px;background-color:@buttonColor;color:#ffffff;">@ButtonName</button>
